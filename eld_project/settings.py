@@ -23,10 +23,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-#13c+s(-$z!-ax_=-@1xsj$vvedkj3f4y=ogcrzc&y+)5dzm74'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = [
+    'road-log-navigator-pro.onrender.com',  # frontend
+    'road-log-navigator-pro-backend.onrender.com',  # backend
+    'localhost',
+    '127.0.0.1',
+]
 
 # Application definition
 
@@ -126,5 +130,6 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:8080",
+    "http://localhost:8080",  # dev
+    "https://road-log-navigator-pro.onrender.com",  # production
 ]
