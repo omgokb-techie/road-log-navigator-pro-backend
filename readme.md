@@ -25,8 +25,8 @@ The backend is designed to work with a frontend that visualizes routes and logs,
 
 1. **Clone the repository**
    ```sh
-   git clone <your-repo-url>
-   cd backend
+   git clone https://github.com/omgokb-techie/road-log-navigator-pro-backend.git
+   cd road-log-navigator-pro-backend
    ```
 
 2. **Create and activate a virtual environment**
